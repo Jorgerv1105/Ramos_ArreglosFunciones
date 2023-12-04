@@ -24,3 +24,16 @@ void inicializarYMostrarMatriz(int x, int n, int m, int matrix[n][m], int valorI
         }
     }
 }
+int main()
+{
+    int x, n, m;
+
+    // Ingresar dimensiones de las matrices tridimensionales
+    ingresarDimensiones(&x, &n, &m);
+
+    // Declarar y mostrar las matrices tridimensionales
+    for (int k = 0; k < x - 1; k++)
+    {
+        int matrix[n][m];
+        inicializarYMostrarMatriz(k + 1, n, m, matrix, 0);
+    }
