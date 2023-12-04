@@ -31,3 +31,31 @@ void sumarMatrices(int filas, int columnas, int matriz1[filas][columnas], int ma
         }
     }
 }
+int main() {
+    // Inicializamos el generador de números aleatorios diferentes en cada ejecución
+    srand(time(NULL));
+
+    int filas, columnas;
+
+    // Ingresar dimensiones de las matrices
+    ingresarDimensiones(&filas, &columnas);
+
+    // Declarar matrices
+    int matrix1[filas][columnas];
+    int matrix2[filas][columnas];
+    int matrixresult[filas][columnas];
+
+    // Generar y mostrar la primera matriz
+    generarYMostrarMatriz(filas, columnas, matrix1);
+
+    // Generar y mostrar la segunda matriz
+    printf("\n");
+    generarYMostrarMatriz(filas, columnas, matrix2);
+
+    // Sumar las matrices y mostrar el resultado
+    sumarMatrices(filas, columnas, matrix1, matrix2, matrixresult);
+
+    printf("\n\nGracias por utilizar el programa de suma de matrices aleatorias\n\n");
+
+    return 0;
+}
