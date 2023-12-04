@@ -37,3 +37,9 @@ int main()
         int matrix[n][m];
         inicializarYMostrarMatriz(k + 1, n, m, matrix, 0);
     }
+    // Última matriz inicializada en unos
+    int lastMatrix[n][m];
+    inicializarYMostrarMatriz(x, n, m, lastMatrix, 1);
+
+    return 0;
+}
