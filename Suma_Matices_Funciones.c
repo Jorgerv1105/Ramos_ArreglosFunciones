@@ -20,3 +20,14 @@ void generarYMostrarMatriz(int filas, int columnas, int matriz[filas][columnas])
         }
     }
 }
+// Función para sumar dos matrices
+void sumarMatrices(int filas, int columnas, int matriz1[filas][columnas], int matriz2[filas][columnas], int resultado[filas][columnas]) {
+    printf("\n\nEl resultado de la suma de las matrices es : \n ");
+    for (int i = 0; i < filas; i++) {
+        printf("\n");
+        for (int j = 0; j < columnas; j++) {
+            resultado[i][j] = matriz1[i][j] + matriz2[i][j];
+            printf("%d\t", resultado[i][j]);
+        }
+    }
+}
